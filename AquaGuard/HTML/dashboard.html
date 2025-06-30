@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaGuard - Smart Water Meter Dashboard</title>
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JAVASCRIPT/dashboard.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../ASSET/logo.jpg" alt="AquaGuard Logo" class="logo">
+        <h1>AquaGuard - Smart Water Meter Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#realtime">Real-Time Usage</a></li>
+                <li><a href="#leak-detection">Leak Detection</a></li>
+                <li><a href="#cost-tracking">Cost Tracking</a></li>
+                <li><a href="#savings-tips">Water-Saving Tips</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button id="darkModeToggle" class="icon-button">&#x1F319;</button> <!-- Moon icon -->
+            <select id="languageSelector" class="language-selector">
+                <option value="en">English</option>
+                <option value="zu">Zulu</option>
+                <option value="xh">Xhosa</option>
+                <option value="af">Afrikaans</option>
+            </select>
+        </div>
+    </header>
+
+    <section id="realtime" class="dashboard-section">
+        <h2>Real-Time Water Usage</h2>
+        <canvas id="usageChart" width="400" height="200"></canvas>
+        <p>Current water usage: <span id="current-usage">0</span> liters</p>
+    </section>
+
+    <section id="leak-detection" class="dashboard-section">
+        <h2>Leak Detection Alerts</h2>
+        <p id="leak-alert">No leaks detected.</p>
+    </section>
+
+    <section id="cost-tracking" class="dashboard-section">
+        <h2>Cost Tracking</h2>
+        <canvas id="costChart" width="400" height="200"></canvas>
+        <p>Estimated Monthly Cost: $<span id="monthly-cost">0.00</span></p>
+        <p>Water Saved This Month: <span id="water-saved">0</span> liters</p>
+    </section>
+
+    <section id="savings-tips" class="dashboard-section">
+        <h2>Personalized Water-Saving Tips</h2>
+        <ul id="savings-tips-list">
+            <li>Tip: Reduce shower time by 5 minutes to save 30 liters per day.</li>
+        </ul>
+    </section>
+
+    <section id="rewards" class="dashboard-section">
+        <h2>Earn Rewards</h2>
+        <p>You have saved <span id="points-earned">0</span> points this month!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AquaGuard | Water Conservation Made Easy</p>
+    </footer>
+</body>
+
+</html>

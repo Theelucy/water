@@ -1,0 +1,143 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd;
+    color: #333;
+}
+
+header {
+    background-color: #00897b; /* Teal for the header */
+    color: white;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 1rem;
+}
+
+.logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and title */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1rem;
+    flex-grow: 1; /* Allow the title to take up available space */
+}
+
+nav {
+    margin-left: auto; /* Push the nav to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.header-buttons {
+    display: flex; /* Align buttons in a row */
+    align-items: center; /* Center vertically */
+    margin-left: 20px; /* Space between nav and buttons */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem; /* Size of the icon */
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    color: #f0f0f0; /* Lighter color on hover */
+}
+
+.language-selector {
+    margin-left: 10px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+}
+
+.language-selector:hover {
+    background-color: #005b52; /* Darker shade on hover */
+}
+
+.dashboard-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dashboard-section:hover {
+    transform: scale(1.01); /* Subtle scale on hover */
+}
+
+.dashboard-section h2 {
+    color: #00897b;
+    margin-top: 0;
+}
+
+#current-usage {
+    font-weight: bold;
+    color: #00796b;
+}
+
+#leak-alert {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #004d40; /* Dark teal for footer */
+    color: white;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header.dark-mode, footer.dark-mode {
+    background-color: #004d40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
